@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WorkshopSystemApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(WorkshopSystemApplication.class, args);
 	}
 
