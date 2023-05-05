@@ -1,9 +1,7 @@
 package com.workshop.workshop.system.resources;
 
 import com.workshop.workshop.system.entities.Order;
-import com.workshop.workshop.system.entities.User;
 import com.workshop.workshop.system.services.OrderService;
-import com.workshop.workshop.system.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

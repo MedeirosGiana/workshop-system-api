@@ -1,5 +1,6 @@
 package com.workshop.workshop.system.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -23,10 +24,12 @@ public class Product implements Serializable {
     @JoinTable(name = "tb_product_category",joinColumns=@JoinColumn(name = "product_id"),inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories = new HashSet<>();
 
+    @OneToMany(mappedBy = "id.product")
+    private Set<OrderItem> items = new HashSet<>();
+
     public Product(){
 
     }
-
     public Product(Long id, String name, String description, Double price, String imgUrl) {
         this.id = id;
         this.name = name;
@@ -34,7 +37,6 @@ public class Product implements Serializable {
         this.price = price;
         this.imgUrl = imgUrl;
     }
-
     public Long getId() {
         return id;
     }
@@ -74,11 +76,17 @@ public class Product implements Serializable {
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
-
     public Set<Category> getCategories() {
         return categories;
     }
-
+    @JsonIgnore
+    public Set<Order> getOrders(){
+        Set<Order> set = new HashSet<>();
+        for (OrderItem x :items){
+            set.add(x.getOrder());
+        }
+        return  set;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
