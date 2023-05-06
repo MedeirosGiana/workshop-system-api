@@ -50,13 +50,13 @@ utilizando o formato de arquivo **Json**, conforme exemplo abaixo para inserir u
    
    ![image](https://user-images.githubusercontent.com/100285143/236644808-152ba8a3-0da6-4361-ac7e-0c23dcb8ae84.png)
    ![image](https://user-images.githubusercontent.com/100285143/236644831-56c2b1c1-0a11-4cac-a1a1-c40288171610.png)
+   ![image](https://user-images.githubusercontent.com/100285143/236645206-5c5603d4-aa47-4da0-8f70-9236be19a390.png)
+
 
 
 ## Contribuindo
 
 Se você quiser contribuir, sinta-se à vontade para enviar um pull request ou abrir uma issue.
-
-<a href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
 
 ## Autora
 **Giana Medeiros**
